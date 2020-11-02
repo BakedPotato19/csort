@@ -60,6 +60,7 @@ struct Node* solve(struct Board *starting_state)
 
 		if(solved(current->val))
 		{
+			boardPrint(current->val);
 			printf("SOLVED!!");
 			return current;		
 		}
