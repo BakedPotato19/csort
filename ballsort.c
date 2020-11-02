@@ -9,16 +9,6 @@
 
 bool pretty_print = false;
 
-
-//=====================================================
-// Section for implementation of the game BallSort
-//
-//=====================================================
-/*
- * Define ball colors
- */
-
-
 //=====================================================
 // Section for implementation of the solver algorithm
 //
@@ -30,25 +20,6 @@ int main(int argc, char** argv)
 
 	uint8_t colors = 3;
 	uint8_t pipes = colors + 2;
-
-	struct Board *b = malloc(sizeof(struct Board));
-
-	uint32_t* pipeptr = malloc(pipes * sizeof(uint32_t));
-	pipeptr[0] = craftPipe(Darkblue,Orange,Red,Darkblue);
-	pipeptr[1] = craftPipe(Orange, Orange, Red, Darkblue);
-	pipeptr[2] = craftPipe(Red, Darkblue, Orange, Red);
-	pipeptr[3] = 0;
-	pipeptr[4] = 0;
-
-	uint32_t* pipeptr1 = malloc(pipes * sizeof(uint32_t));
-	pipeptr1[0] = craftPipe(Orange,Orange,Orange,Orange);
-	pipeptr1[1] = craftPipe(Red, Red, Red, Red);
-	pipeptr1[2] = craftPipe(Darkblue, Darkblue, Darkblue, Darkblue);
-	pipeptr1[3] = 0;
-	pipeptr1[4] = 0;
-
-	b->state = pipeptr;	
-	b->pipes = pipes;
 
 	struct Board* j = malloc(sizeof(struct Board));
 
